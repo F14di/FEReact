@@ -1,0 +1,4 @@
+#ignore followings
+.cache/
+dist/
+node_modules/
