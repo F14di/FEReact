@@ -67,6 +67,8 @@ render(){
                 </h3>
                 <hr className="col-12 col-md-8"></hr>
             </div>
+
+                                {/* AVATAR */}
             <div className=" flex-grow-1 ">
                 <div className="rounded shadow pt-5 pb-2 pr-4 pl-4 mt-5 ml-auto mr-auto card col-10 col-sm-8 col-md-6">
                     <div className="d-flex justify-content-center">
@@ -75,26 +77,26 @@ render(){
                                 {/* LOGIN FORM INPUT*/}
             <form onSubmit={this.loginSubmit}>
 {/* Input Email */}
-                <div className="form-group mb-3">
-                    <label className="mb-0" htmlFor="input__email">Email address</label>
-                    <div className="input-group mb-1">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text">
-                                    <i className="fas fa-at"></i>
-                            </span>
-                        </div>
-                        <input 
-                        type="text" 
-                        className="form-control" 
-                        placeholder="Email" 
-                        id="input__email"
-                        aria-label="email"
-                        name="email"
-                        defaultValue={this.state.email.value}
-                        onBlur={this.handleInputChange} ></input>
+            <div className="form-group mb-3">
+                <label className="mb-0" htmlFor="input__email">Email address</label>
+                <div className="input-group mb-1">
+                    <div className="input-group-prepend">
+                        <span className="input-group-text">
+                                <i className="fas fa-at"></i>
+                        </span>
                     </div>
-                    <InputErrors errors = {this.state.email.errors}/>
+                    <input 
+                    type="text" 
+                    className="form-control" 
+                    placeholder="Email" 
+                    id="input__email"
+                    aria-label="email"
+                    name="email"
+                    defaultValue={this.state.email.value}
+                    onBlur={this.handleInputChange} ></input>
                 </div>
+                <InputErrors errors = {this.state.email.errors}/>
+            </div>
 
 
 {/* Input Password */}
@@ -130,7 +132,6 @@ render(){
         
             </div>
         </div>
-        </div>
-    )
-    }
+    </div>
+    )}
 }
