@@ -5,7 +5,7 @@ render(){
     return(<>
      <div className="form-group">
         <label htmlFor="exampleFormControlSelect2">Example multiple select</label>
-        <select multiple className="form-control" id="exampleFormControlSelect2" disabled>
+        <select multiple className="form-control" id="exampleFormControlSelect2" disabled={this.props.disabled}>
         <option>1</option>
         <option>2</option>
         <option>3</option>
