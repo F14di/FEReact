@@ -70,7 +70,7 @@ render(){
 
                                 {/* AVATAR */}
             <div className=" flex-grow-1 ">
-                <div className="rounded shadow pt-5 pb-2 pr-4 pl-4 mt-5 ml-auto mr-auto card col-10 col-sm-8 col-md-6">
+                <div className="rounded shadow pt-5 pb-2 pr-4 pl-4 mt-5 ml-auto mr-auto card col-10 col-sm-8 col-md-7">
                     <div className="d-flex justify-content-center">
                         <img className="position-absolute" src={avatar} style={{width:"5rem", top:"-42px", border:"1px solid teal", borderRadius:"50%"}}></img>
                     </div>
