@@ -1,8 +1,5 @@
 import React from 'react';
-import avatar from '../assets/avatar.jpg';
-import aLogo from '../assets/a_logo.png';
 import InputErrors from './Errors/InputError'
-import liftImg from '../assets/g5185.png'
 
 export default class Body extends React.Component{
 
@@ -48,13 +45,13 @@ export default class Body extends React.Component{
 
     loginSubmit(e){
         e.preventDefault();
-        console.log(e)
         let noErrors = true;
 // Test each field of the form for errors
         Object.keys(this.state).forEach(name=>{
             this.handleInputChange({target:{name, value:this.state[name].value}})
         })
         
+        console.log(this.state)
     }
 
 render(){
@@ -62,8 +59,8 @@ render(){
         <div style={{minHeight:"82vh"}} className="d-flex flex-lg-row-reverse align-items-lg-center flex-column" > 
             <div className="flex-grow-1">
                 <h3 className="text-center" style={{marginBottom:'-20px', fontFamily:"Sans-Serif", letterSpacing:"2px"}}>
-                    <img style={{width:'72px', position:'relative', right:'-15px', bottom:"38px"}} src={liftImg}></img>
-                    <img style={{width:"26px", transform:'rotate(35deg)'}} src={aLogo}></img>ssign {/*<i style={{color:"teal", fontSize:"23px"}} className="fas fa-terminal"></i>  */} Me 
+                    <img style={{width:'72px', position:'relative', right:'-15px', bottom:"38px"}} src="g5185.png"></img>
+                    <img style={{width:"26px", transform:'rotate(35deg)'}} src="a_logo.png"></img>ssign {/*<i style={{color:"teal", fontSize:"23px"}} className="fas fa-terminal"></i>  */} Me 
                 </h3>
                 <hr className="col-12 col-md-8"></hr>
             </div>
@@ -72,7 +69,7 @@ render(){
             <div className=" flex-grow-1 ">
                 <div className="rounded shadow pt-5 pb-2 pr-4 pl-4 mt-5 ml-auto mr-auto card col-10 col-sm-8 col-md-7">
                     <div className="d-flex justify-content-center">
-                        <img className="position-absolute" src={avatar} style={{width:"5rem", top:"-42px", border:"1px solid teal", borderRadius:"50%"}}></img>
+                        <img className="position-absolute" src="avatar.jpg" style={{width:"5rem", top:"-42px", border:"1px solid teal", borderRadius:"50%"}}></img>
                     </div>
                                 {/* LOGIN FORM INPUT*/}
             <form onSubmit={this.loginSubmit}>

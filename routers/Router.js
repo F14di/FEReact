@@ -7,7 +7,7 @@ import Body from '../Components/Body'
 import UserProfile from '../Components/UserProfile/UserProfile'
 import Settings from '../Components/Settings/Settings'
 import PageNotFound from '../Components/PageNotFound'
-
+import AddRole from '../Components/Roles/AddRole'
 
 export default ()=>(
 <BrowserRouter>
@@ -17,6 +17,7 @@ export default ()=>(
             <Route path="/" component={Body} exact={true}/>
             <Route path="/user-profile/" component={UserProfile} />
             <Route path="/settings" component={Settings} />
+            <Route path="/add-role" component={AddRole} />
             <Route component={PageNotFound} />
         </Switch>
         <Footer />
