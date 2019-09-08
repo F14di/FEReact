@@ -15,7 +15,7 @@ export default ()=>(
         <Header />
         <Switch>
             <Route path="/" component={Body} exact={true}/>
-            <Route path="/user-profile" component={UserProfile} />
+            <Route path="/user-profile/" component={UserProfile} />
             <Route path="/settings" component={Settings} />
             <Route component={PageNotFound} />
         </Switch>

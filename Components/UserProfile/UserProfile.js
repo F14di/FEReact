@@ -52,11 +52,9 @@ export default class UserProfile extends React.Component{
 
     componentDidMount(){
         this.fetchUserData()
-        
     }
 
     fetchUserData(){
-        console.log(USER)
         this.setState({
             userData:USER
         })
