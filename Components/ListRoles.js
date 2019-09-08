@@ -4,13 +4,10 @@ export default class ListRoles extends React.Component{
 render(){
     return(<>
      <div className="form-group">
-        <label htmlFor="exampleFormControlSelect2">Example multiple select</label>
+        <label htmlFor="exampleFormControlSelect2">{this.props.title}</label>
         <select multiple className="form-control" id="exampleFormControlSelect2" disabled={this.props.disabled}>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        {this.props.options.map((option)=>(<option>{option}</option>))}
+
         </select>
     </div>
     </>)

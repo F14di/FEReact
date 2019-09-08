@@ -28,7 +28,7 @@ export default class UserProfileDetails extends React.Component{
                             <div className="col-lg-3 col-sm-6 mb-2">
                                  <small className="mb-1">Work Site</small>
                                 <input type="text" className="form-control input_workSite" placeholder="Work Site" aria-label="WorkSite"
-                                    disabled={this.props.editMode} defaultValue={`${this.props.details.workSite.name+this.props.details.workSite.country.name}`}></input>
+                                    disabled={this.props.editMode} defaultValue={`${this.props.details.workSite.name.concat(' ', this.props.details.workSite.country.name)}`}></input>
                             </div>
                             <div className="col-lg-3 col-sm-6 mb-2">
                                 <small className="mb-1">Manager</small>

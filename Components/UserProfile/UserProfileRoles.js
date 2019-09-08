@@ -10,7 +10,7 @@ export default class UserProfileDetails extends React.Component{
             <h5 className="text-center mt-3 mb-1">Roles</h5>
             <div className="d-flex justify-content-around">
                 <div className="w-75 m-2">
-                    <ListRoles disabled={this.props.editMode}/>
+                    <ListRoles disabled={this.props.editMode} options={[1,2,3,4]}/>
                 </div>
                 {!this.props.editMode &&
                 <>
@@ -19,7 +19,7 @@ export default class UserProfileDetails extends React.Component{
                     <button className="btn btn-sm btn-outline-danger m-1"><i className="fas fa-arrow-left"></i> Remove</button>
                 </div>
                 <div className="w-75 m-2">
-                    <ListRoles disabled={this.props.editMode}/>
+                    <ListRoles disabled={this.props.editMode} options={[1,2,3,4]}/>
                 </div>
             </>}
                 
