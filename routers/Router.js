@@ -7,7 +7,7 @@ import Body from '../Components/Body'
 import UserProfile from '../Components/UserProfile/UserProfile'
 import Settings from '../Components/Settings/Settings'
 import PageNotFound from '../Components/PageNotFound'
-import AddRole from '../Components/Roles/AddRole'
+import AddRole from '../Components/Form-add/AddRole'
 
 export default ()=>(
 <BrowserRouter>

@@ -1,12 +1,13 @@
 import React from 'react';
 import InputErrors from './Errors/InputError'
+import {validation} from '../validations/Validations'
 
 export default class Body extends React.Component{
 
     constructor(props){
         super(props);
         this.state={
-            email:{value:'',errors:[],validations:{required:true, isEmail:/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/}},
+            email:{value:'',errors:[],validations:{required:true, isEmail:true}},
             password:{value:'',errors:[],validations:{required:true}}
         }
 
@@ -20,17 +21,17 @@ export default class Body extends React.Component{
         const errors=[];
 
 {/** required input validation */}
-        if (validations.required){
-            if (!value){
-                errors.push(`*${name} is required`)
-            }
+    if(validations.required){
+        if (validation.isRequired(value)){
+            errors.push(`*${name} is required`)}
         }
 
 {/** Valid email input */}
         if(validations.isEmail){
-           if (!validations.isEmail.test(value)) 
+            if (validation.isValidEmail(value)) 
                 errors.push(`*invalid ${name}`)
-        }
+         }
+
 
 {/** Update the state with the errors if exist*/}
         this.setState({             
@@ -46,12 +47,11 @@ export default class Body extends React.Component{
     loginSubmit(e){
         e.preventDefault();
         let noErrors = true;
-// Test each field of the form for errors
+    // Test each field of the form for errors
         Object.keys(this.state).forEach(name=>{
             this.handleInputChange({target:{name, value:this.state[name].value}})
         })
         
-        console.log(this.state)
     }
 
 render(){
