@@ -1,6 +1,7 @@
 import React from 'react';
 import InputErrors from './Errors/InputError'
 import {validation} from '../validations/Validations'
+import {Link} from 'react-router-dom';
 
 export default class Body extends React.Component{
 
@@ -58,7 +59,7 @@ render(){
     return(
         <div style={{minHeight:"82vh"}} className="d-flex flex-lg-row-reverse align-items-lg-center flex-column" > 
             <div className="flex-grow-1">
-                <h3 className="text-center" style={{marginBottom:'-20px', fontFamily:"Sans-Serif", letterSpacing:"2px"}}>
+                <h3 className="text-center my-3" style={{ fontFamily:"Sans-Serif", letterSpacing:"2px"}}>
                     {/* <img style={{width:'72px', position:'relative', right:'-15px', bottom:"38px"}} src="g5185.png"></img> */}
                     <img style={{width:"29px"}} src="a_logo.png"></img>ssign {/*<i style={{color:"teal", fontSize:"23px"}} className="fas fa-terminal"></i>  */} Me 
                 </h3>
@@ -120,7 +121,7 @@ render(){
 
 
             <div className="d-flex justify-content-end">
-                <button type="submit" className="mr-2 mb-3 btn btn-info">Login</button>
+                <button type="submit" className="mr-2 mb-3 btn btn-info"><Link to="/home" style={{color:'white'}}>Login</Link></button>
             </div>
 
             </form>

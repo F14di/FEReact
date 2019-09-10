@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 export default class SettingsNavbar extends React.Component{
     render(){
         return(<>
+        <div className="my-4">
             <Nav variant="tabs" defaultActiveKey="" justify >
                 <Nav.Item>
                     <Link to="/settings/add/roles">Roles</Link>
@@ -16,6 +17,7 @@ export default class SettingsNavbar extends React.Component{
                     <Link to="/settings/add/worksite">WorkSite</Link>
                 </Nav.Item>
             </Nav>
+        </div>
                 
         </>
         )
