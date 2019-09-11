@@ -16,12 +16,13 @@ export default class UsersTableRow extends React.Component{
         }
         
         return (
-            <tr>
-                <td>{this.props.user.employeeNumber}</td>
-                <td>{this.props.user.firstName.concat(' ',this.props.user.lastName)}</td>
+            <tr
+            onDoubleClick={this.props.doubleClick}>
+                <td>{this.props.user.number}</td>
+                <td>{this.props.user.name}</td>
                 <td>{this.props.user.roles}</td>
                 <td>{this.props.user.department}</td>
-                <td>{this.props.user.workSite}</td>
+                <td>{this.props.user.worksite}</td>
             </tr>
         );
     }

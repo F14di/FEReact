@@ -18,7 +18,6 @@ export default class App extends React.Component{
                         Users
                     </h1>
                 </div>
-
                 <UsersStatus />
                 <div className="row d-flex align-items-center">
                     <div className="col-lg-8">
