@@ -18,7 +18,7 @@ export default class UsersTableRow extends React.Component{
         return (
             <tr
             onDoubleClick={this.props.doubleClick}>
-                <td>{this.props.user.number}</td>
+                <td><Link to="/">{this.props.user.number}</Link></td>
                 <td>{this.props.user.name}</td>
                 <td>{this.props.user.roles}</td>
                 <td>{this.props.user.department}</td>

@@ -67,11 +67,6 @@ export default class UsersTable extends React.Component{
         }   
     }
 
-    doubleClick(e){
-        
-        console.log(e)
-    }
-
     render(){
         return(
             <div>
@@ -152,7 +147,7 @@ export default class UsersTable extends React.Component{
                                                     key={user.id}
                                                     user={user}
                                                     errors= {this.state.errors}
-                                                    doubleClick={this.doubleClick}/>)
+                                                    />)
                             }  
                         </tbody>
                     </Table>
