@@ -11,6 +11,9 @@ const options = {
     chart: {
       type: "pie"
     },
+    title: {
+      text: "Roles"
+    },
     series: [
       {
         data: [
