@@ -15,10 +15,16 @@ const options = {
       {
         data: [
           {
-            y: 300
+            name: 'Manager',
+            y: 50,
+            
+            
           },
           {
-            y: 50
+            name: 'Employee',
+            y: 300,
+            
+            
           }
         ]
       }

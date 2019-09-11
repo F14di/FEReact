@@ -35,14 +35,14 @@ export default class AddRole extends React.Component{
 
             <div className="d-flex">
                 <div className="w-100 ">
-                    <ListRoles options={['Manager','Employee','Admin']}/>
+                    <ListRoles options={['Permission 1','Permission 2','Permission 3']}/>
                 </div>
                 <div className="d-flex flex-column justify-content-center">
                     <button className="btn btn-sm btn-outline-success m-1 mx-2">Add <i className="fas fa-arrow-right"></i></button>
                     <button className="btn btn-sm btn-outline-danger m-1  mx-2"><i className="fas fa-arrow-left"></i> Remove</button>
                 </div>
                 <div className="w-100 ">
-                    <ListRoles options={['Intern','HR manager']}/>
+                    <ListRoles options={['Permission 4','Permission 5']}/>
                 </div>
             </div>
 
