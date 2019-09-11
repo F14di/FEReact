@@ -16,6 +16,9 @@ export default class SettingsNavbar extends React.Component{
                 <Nav.Item>
                     <Link to="/settings/add/worksite">WorkSite</Link>
                 </Nav.Item>
+                <Nav.Item>
+                    <Link to="/settings/add/user" onClick={()=>console.log('Emad')}>Users</Link>
+                </Nav.Item>
             </Nav>
         </div>
                 

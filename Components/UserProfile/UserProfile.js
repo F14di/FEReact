@@ -2,7 +2,6 @@ import React from 'react';
 import UserProfileHeader from './UserProfileHeader'
 import UserProfileDetails from './UserProfileDetails'
 import UserProfileRoles from './UserProfileRoles';
-import UserProfileChart from './UserProfileChart';
 import UserProfileFooter from './UserProfileFooter';
 import {USER} from '../../data/mockData'
 
@@ -107,8 +106,6 @@ export default class UserProfile extends React.Component{
 
                     <UserProfileRoles editMode={!this.state.mode.edit}
                                         userRoles={this.state.userData.roles}/>
-
-                    <UserProfileChart editMode={!this.state.mode.edit} />
 
                     <UserProfileFooter editMode={!this.state.mode.edit}
                                         isLocked={this.state.status.locked}
