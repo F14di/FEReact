@@ -86,7 +86,7 @@ export default class App extends React.Component {
 
 
 
-                    {/*Description*/}                 
+                    {/* Description                 
                     <div className="mx-auto mb-3 col-md-6">
                         <div className="">
                             <label htmlFor="departmentDescription">Description</label>
@@ -105,7 +105,7 @@ export default class App extends React.Component {
                             </div>
                             <InputErrors errors={this.state.description.errors} />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="row  mb-3">
                     
 
